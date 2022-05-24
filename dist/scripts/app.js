@@ -1,6 +1,9 @@
-"use strict";
+import { data } from './inicial.js';
+import { Item } from './Item.js';
 function app() {
-    return console.log('Hola');
+    data;
+    let selector = '.toDoList';
+    data.forEach((item) => new Item(item, selector));
 }
 (() => {
     document.addEventListener('DOMContentLoaded', app);
